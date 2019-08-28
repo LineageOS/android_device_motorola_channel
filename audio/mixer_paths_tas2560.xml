@@ -264,6 +264,16 @@
 		<ctl name="AFE_PCM_RX Audio Mixer MultiMedia5" value="1" />
 	</path>
 
+	<path name="low-latency-playback hdmi">
+		<ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia5" value="1" />
+		<ctl name="SLIM_0_RX Format" value="S24_LE" />
+		<ctl name="SLIM_0_RX Channels" value="Two" />
+		<ctl name="AIF1TX1 Input 1" value="SLIMRX1" />
+		<ctl name="AIF1TX1 Input 1 Volume" value="32" />
+		<ctl name="AIF1TX2 Input 1" value="SLIMRX2" />
+		<ctl name="AIF1TX2 Input 1 Volume" value="32" />
+	</path>
+
 	<path name="low-latency-playback usb-headphones">
 		<path name="low-latency-playback afe-proxy" />
 	</path>
@@ -360,6 +370,16 @@
 
 	<path name="compress-offload-playback afe-proxy">
 		<ctl name="AFE_PCM_RX Audio Mixer MultiMedia4" value="1" />
+	</path>
+
+	<path name="compress-offload-playback hdmi">
+		<ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia4" value="1" />
+		<ctl name="SLIM_0_RX Format" value="S24_LE" />
+		<ctl name="SLIM_0_RX Channels" value="Two" />
+		<ctl name="AIF1TX1 Input 1" value="SLIMRX1" />
+		<ctl name="AIF1TX1 Input 1 Volume" value="32" />
+		<ctl name="AIF1TX2 Input 1" value="SLIMRX2" />
+		<ctl name="AIF1TX2 Input 1 Volume" value="32" />
 	</path>
 
 	<path name="compress-offload-playback usb-headphones">
@@ -644,7 +664,14 @@
 		<path name="incall-music-uplink" />
 	</path>
 
+    <path name="multi-channel-playback afe-proxy">
+        <ctl name="AFE_PCM_RX Audio Mixer MultiMedia2" value="1" />
+    </path>
+
 	<path name="afe-proxy-playback afe-proxy">
+	</path>
+
+	<path name="afe-proxy-record">
 	</path>
 
 	<path name="afe-proxy-record afe-proxy">
