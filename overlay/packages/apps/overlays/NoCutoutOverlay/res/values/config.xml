@@ -26,8 +26,17 @@
     <bool name="config_maskMainBuiltInDisplayCutout">true</bool>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">28dp</dimen>
-    <dimen name="status_bar_height_landscape">28dp</dimen>
-    <dimen name="rounded_corner_radius_top">60px</dimen>
+    <dimen name="status_bar_height_portrait">28.0dip</dimen>
+    <dimen name="status_bar_height_landscape">28.0dip</dimen>
+
+    <!-- Radius of the software rounded corners at the top of the display in its natural
+        orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_top">70.0px</dimen>
+
+    <!-- Height of area above QQS where battery/time go (equal to status bar height if > 48dp) -->
+    <dimen name="quick_qs_offset_height">48.0dip</dimen>
+
+    <!-- Total height of QQS (quick_qs_offset_height + 128) -->
+    <dimen name="quick_qs_total_height">176.0dip</dimen>
 
 </resources>
