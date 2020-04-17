@@ -1,5 +1,5 @@
 #
-# vendor props for river
+# vendor props for channel
 #
 
 # Audio
@@ -14,7 +14,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.sensors=river \
+    ro.hardware.sensors=channel \
     ro.vendor.sensors.amd=false \
     ro.vendor.sensors.facing=false \
     ro.vendor.sensors.mot_detect=true \

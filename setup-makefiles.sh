@@ -18,10 +18,10 @@
 set -e
 
 # Required!
-export DEVICE=river
+export DEVICE=channel
 export DEVICE_COMMON=sdm632-common
 export VENDOR=motorola
 
-export DEVICE_BRINGUP_YEAR=2019
+export DEVICE_BRINGUP_YEAR=2020
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
