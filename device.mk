@@ -35,9 +35,10 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Audio
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/audio_platform_info_tas2560.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_tas2560.xml \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/audio_ext_spkr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_ext_spkr.conf \
-    $(LOCAL_PATH)/audio/mixer_paths_madera_epout.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_madera_epout.xml \
+    $(LOCAL_PATH)/audio/mixer_paths_tas2560.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tas2560.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 # Boot animation
