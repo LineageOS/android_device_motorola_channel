@@ -22,6 +22,10 @@ DEVICE_PATH := device/motorola/channel
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := channel
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_channel
+TARGET_RECOVERY_DEVICE_MODULES += //$(DEVICE_PATH):libinit_channel
+
 # Kernel
 TARGET_KERNEL_CONFIG := channel_defconfig
 
