@@ -50,7 +50,7 @@ std::vector<std::string> ro_props_default_source_order = {
     "vendor.",
 };
 
-void property_override(char const prop[], char const value[], bool add = true)
+void property_override_device(char const prop[], char const value[], bool add = true)
 {
     prop_info *pi;
 
@@ -70,24 +70,24 @@ void vendor_load_device_properties()
     const auto set_ro_build_prop = [](const std::string &source,
             const std::string &prop, const std::string &value) {
         auto prop_name = "ro." + source + "build." + prop;
-        property_override(prop_name.c_str(), value.c_str(), false);
+        property_override_device(prop_name.c_str(), value.c_str(), false);
     };
 
     const auto set_ro_product_prop = [](const std::string &source,
             const std::string &prop, const std::string &value) {
         auto prop_name = "ro.product." + source + prop;
-        property_override(prop_name.c_str(), value.c_str(), false);
+        property_override_device(prop_name.c_str(), value.c_str(), false);
     };
 
     bootsku = GetProperty("ro.boot.hardware.sku", "");
     if (bootsku == "XT1952-T") {
         /* T-Mobile REVVLRY */
-        property_override("ro.build.description", "channel_revvl-user 10 QPY30.85-18 6572f release-keys");
-        property_override("persist.vendor.radio.customer_mbns", "tmo_usa_ims_default.mbn;sprint_usa_ims.mbn");
-        property_override("persist.vendor.radio.data_con_rprt", "1");
-        property_override("persist.vendor.ims.playout_delay", "10");
-        property_override("persist.vendor.ims.cam_sensor_delay", "20");
-        property_override("persist.vendor.ims.display_delay", "40");
+        property_override_device("ro.build.description", "channel_revvl-user 10 QPY30.85-18 6572f release-keys");
+        property_override_device("persist.vendor.radio.customer_mbns", "tmo_usa_ims_default.mbn;sprint_usa_ims.mbn");
+        property_override_device("persist.vendor.radio.data_con_rprt", "1");
+        property_override_device("persist.vendor.ims.playout_delay", "10");
+        property_override_device("persist.vendor.ims.cam_sensor_delay", "20");
+        property_override_device("persist.vendor.ims.display_delay", "40");
         for (const auto &source : ro_props_default_source_order) {
             set_ro_build_prop(source, "fingerprint", "motorola/channel_revvl/channel:10/QPY30.85-18/6572f:user/release-keys");
             set_ro_product_prop(source, "device", "channel");
@@ -96,7 +96,7 @@ void vendor_load_device_properties()
         }
     } else {
         /* moto g(7) play (Unlocked) */
-        property_override("ro.build.description", "channel-user 9 PPY29.148-140 687ae release-keys");
+        property_override_device("ro.build.description", "channel-user 9 PPY29.148-140 687ae release-keys");
         for (const auto &source : ro_props_default_source_order) {
             set_ro_build_prop(source, "fingerprint", "motorola/channel_retail/channel:9/PPY29.148-140/687ae:user/release-keys");
             set_ro_product_prop(source, "device", "channel");
