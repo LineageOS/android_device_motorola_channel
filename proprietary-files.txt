@@ -229,5 +229,3 @@ vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 # Vibrator Firmwares
 vendor/firmware/aw8624_haptic.bin
 vendor/firmware/aw8624_rtp.bin
-vendor/firmware/aw8624_rtp_lighthouse.bin
-vendor/firmware/aw8624_rtp_silk.bin
