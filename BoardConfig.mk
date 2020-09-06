@@ -19,6 +19,9 @@
 
 DEVICE_PATH := device/motorola/channel
 
+# Audio
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := channel
 
