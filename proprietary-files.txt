@@ -9,7 +9,7 @@ vendor/lib/soundfx/libspeakerbundle.so
 vendor/lib/soundfx/libmmieffectswrapper.so
 vendor/lib/vndk/libtinyalsa.so
 
-# Audio ACDB
+# Audio - ACDB
 vendor/etc/acdbdata/common/Bluetooth_cal.acdb
 vendor/etc/acdbdata/common/General_cal.acdb
 vendor/etc/acdbdata/common/Global_cal.acdb
@@ -24,6 +24,11 @@ vendor/etc/acdbdata/common_s/Hdmi_cal.acdb
 vendor/etc/acdbdata/common_s/Headset_cal.acdb
 vendor/etc/acdbdata/common/Speaker_cal.acdb
 vendor/etc/acdbdata/common_s/Speaker_cal.acdb
+
+Audio - ADSP
+vendor/lib/rfsa/adsp/tas2560_TI_0.bin
+vendor/lib/rfsa/adsp/tas2560_TI_1.bin
+vendor/lib/rfsa/adsp/capi_v2_smartAmp_TAS25xx.so.1
 
 # Camera
 vendor/lib/libmot_gpu_mapper.so
