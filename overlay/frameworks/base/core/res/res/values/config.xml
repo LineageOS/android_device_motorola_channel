@@ -35,7 +35,7 @@
     </string>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">60.0px</dimen>
+    <dimen name="status_bar_height_portrait">72.0px</dimen>
     <dimen name="status_bar_height_landscape">24.0dp</dimen>
 
 </resources>
