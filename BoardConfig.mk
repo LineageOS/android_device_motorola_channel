@@ -29,6 +29,9 @@ SOONG_CONFIG_MOTOROLA_SDM632_INIT_DEVICE_LIB := //$(DEVICE_PATH):libinit_channel
 
 # Kernel
 TARGET_KERNEL_CONFIG := channel_defconfig
+LZMA_RAMDISK_TARGETS := \
+    boot \
+    recovery
 
 # Low Memory Devices
 MALLOC_SVELTE := true
