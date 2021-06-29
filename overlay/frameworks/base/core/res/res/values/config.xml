@@ -38,4 +38,6 @@
     <dimen name="status_bar_height_portrait">72.0px</dimen>
     <dimen name="status_bar_height_landscape">24.0dp</dimen>
 
+    <!-- The max scale for the wallpaper when it's zoomed in -->
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
 </resources>
