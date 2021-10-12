@@ -1,0 +1,20 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init scripts
+sh_binary {
+    name: "init.audio.specified_para.sh",
+    src: "bin/init.audio.specified_para.sh",
+    vendor: true,
+}
+
+// Init configuration files
+prebuilt_etc {
+    name: "init.ocean.rc",
+    src: "etc/init.ocean.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
