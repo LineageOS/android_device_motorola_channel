@@ -12,6 +12,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.calfile5=/vendor/etc/acdbdata/common/Headset_cal.acdb \
     persist.vendor.audio.calfile6=/vendor/etc/acdbdata/common/Speaker_cal.acdb
 
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.device.default_name=moto g(7) play
+
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.sensors=channel \
