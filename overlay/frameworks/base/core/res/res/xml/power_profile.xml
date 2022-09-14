@@ -104,4 +104,5 @@
     <item name="cpu.idle">2.9</item>
     <!-- This is the battery capacity in mAh -->
     <item name="battery.capacity">3000</item>
+    <item name="bluetooth.controller.voltage">3300</item>
 </device>
