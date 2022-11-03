@@ -1,15 +1,15 @@
 # All unpinned blobs below are extracted from Channel QPYS30.85-23-8-2
 
 # Audio - Prebuilt
+vendor/lib/hw/audio.primary.msm8953.so
+vendor/lib/soundfx/libmmieffectswrapper.so
+vendor/lib/soundfx/libspeakerbundle.so
+vendor/lib/vndk/libtinyalsa.so
 vendor/lib/libadm.so
 vendor/lib/liblog_vendor.so
 vendor/lib/libmotaudioutils.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/libtinycompress_vendor.so
-vendor/lib/hw/audio.primary.msm8953.so
-vendor/lib/soundfx/libspeakerbundle.so
-vendor/lib/soundfx/libmmieffectswrapper.so
-vendor/lib/vndk/libtinyalsa.so
 
 # Audio - ACDB
 vendor/etc/acdbdata/common/Bluetooth_cal.acdb
@@ -21,40 +21,40 @@ vendor/etc/acdbdata/common/Headset_cal.acdb
 vendor/etc/acdbdata/common/Speaker_cal.acdb
 
 # Audio - ADSP
+vendor/lib/rfsa/adsp/capi_v2_smartAmp_TAS25xx.so.1
 vendor/lib/rfsa/adsp/tas2560_TI_0.bin
 vendor/lib/rfsa/adsp/tas2560_TI_1.bin
-vendor/lib/rfsa/adsp/capi_v2_smartAmp_TAS25xx.so.1
 
 # Camera
 vendor/lib/libmot_gpu_mapper.so
 
 # Camera
 vendor/lib/hw/camera.msm8953.so
-vendor/lib/libhal_dbg.so
+vendor/lib/lib_motsensorlistener.so
 vendor/lib/libactuator_dw9763.so
 vendor/lib/libactuator_dw9767.so
 vendor/lib/libactuator_lc898217xh.so
+vendor/lib/libcdsprpc.so
+vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libgralloc1.so
+vendor/lib/libhal_dbg.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmm-qcamera.so
-vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmjpeg.so
+vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmlib2d_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmot_afd.so
 vendor/lib/libmot_lux_standardization.so
-vendor/lib/lib_motsensorlistener.so
 vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
+vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libdepthmapwrapper.so
 
 # Camera - Chromatix
 vendor/lib/libchromatix_mot_s5k3l6_common.so
@@ -191,28 +191,31 @@ vendor/firmware/cpp_firmware_v1_8_0.fw
 -product/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk;PRESIGNED
 
 # Camera - MotCamera2 - libs
+product/lib/libBulkSNPE.so|1f62c5a2a85f0a3c4ec8c5ac073ba9f25ecb8799
+product/lib/libFNVfbEngineHAL.so|04f50ed9d90cd784af4f7cd99ac1801b61b6f7c4
+product/lib/libPlatformValidatorShared.so|157f49c44405b547c32ea5331fb79a9b8ccbbdb4
+product/lib/libSNPE.so|24c0f2cc648b469a3e7a78459866ccb422747a07
+product/lib/libSNPE_G.so|78d817d01403fda1885d11959e4384596b655eab
 product/lib/libarcsoft_dualcam_refocus.so|3f1546036126fc6d266699a6e0cf62ddfb8f0a0f
 product/lib/libarcsoft_supernight.so|febeea328b771f24e8406031ef276545db91b243
 product/lib/libbg-postproc-jni.so|4634be4079bd93b20f3a57dda32fa76911f19760
 product/lib/libbs-depth.so|2f2c6125eaf1f5e7b62c3e0901d50dcd729ce5f3
-product/lib/libBulkSNPE.so|1f62c5a2a85f0a3c4ec8c5ac073ba9f25ecb8799
-product/lib/libcalculator_domains.so|6033ada7a77eeb4816ad116a75bf2ddd96fda904
-product/lib/libcalculator.so|61f16fcec94403c57f26844f2d58d1eed82d4bc1
-product/lib/libcamerax_extension_jni.so|692383bb8784295d56cb8cc88098a84690db4e8f
-product/lib/libc++_shared.so|17ba2ce76ecf47e5be81664d6ba9b8dedcea15ee
 product/lib/libc++.so|3c71f37f2c460cb36eb8ca5afd03fdbd42771320
+product/lib/libc++_shared.so|17ba2ce76ecf47e5be81664d6ba9b8dedcea15ee
+product/lib/libcalculator.so|61f16fcec94403c57f26844f2d58d1eed82d4bc1
+product/lib/libcalculator_domains.so|6033ada7a77eeb4816ad116a75bf2ddd96fda904
+product/lib/libcamerax_extension_jni.so|692383bb8784295d56cb8cc88098a84690db4e8f
 product/lib/libfn-beauty-vfb-ASIA.so|f8ea84907ef7602a3a5bfe311c0a92a979f45511
+product/lib/libfn-beauty-vfb-LATAM.so|78dda101932805f68d6267b7723fd4f0a65d2429
+product/lib/libfn-beauty-vfb-US.so|958194d14ead4117980b09eea0901480b84f8669
 product/lib/libfn-beauty-vfb-channel_ASIA.so|aa401f4c875a15fb2d25b63ac27397bb0f4d835a
 product/lib/libfn-beauty-vfb-channel_LATAM.so|e72bce6fe85378fb48b1cb48fd2b03a43df3bb83
 product/lib/libfn-beauty-vfb-channel_US.so|259c222f636cd7439a5b18db1834b9f56a201e4f
-product/lib/libfn-beauty-vfb-LATAM.so|78dda101932805f68d6267b7723fd4f0a65d2429
-product/lib/libfn-beauty-vfb-US.so|958194d14ead4117980b09eea0901480b84f8669
-product/lib/libFNVfbEngineHAL.so|04f50ed9d90cd784af4f7cd99ac1801b61b6f7c4
 product/lib/libgif.so|94ebd9d368ea9369e40c1d34ed982f56ea63ce87
 product/lib/libhta.so|24a7c5a9db9b286f332999c175237d25788b7259
 product/lib/libjpeg.so|3127063fc679057534b1c29e95abf954b3b06bad
-product/lib/liblenovo_panorama_qc.so|a1a68e1b5f2f4c3e987710b1280bf44a06b05eda
 product/lib/liblenovo_panorama.so|88c09488c3649564d367abbabf4a70b316be158f
+product/lib/liblenovo_panorama_qc.so|a1a68e1b5f2f4c3e987710b1280bf44a06b05eda
 product/lib/libmcf-qc-fd-offline_local.so|cf579b8beb62479c5423581b7501909e9388daaf
 product/lib/libmmcamera_faceproc2.so|97efe48c509b5b482bfc4d7ffc0351c27d1fe663
 product/lib/libmorpho_cinema_graph.so|a5143ac8fd274ece0c811c0f4ab2d797ef3a6c20
@@ -224,12 +227,11 @@ product/lib/libmorpho_sensor_fusion.so|60a43eae6ae91ded094c2fb426aa92656638fbd2
 product/lib/libmot-cinemagraph-engine.so|a1c56f64f5b6edcd1835c0cf8ef550c69e57cbd7
 product/lib/libmot-remosaic-util.so|1baf2a66b63e711d08dedd827f13875f56608754
 product/lib/libmot-util.so|5e582cd0b1635c6370bbb82531047e23cfd0d47d
-product/lib/libmpbase.so|e9dc5e7efeb124ff3d07bf8e4a59f37972d1a6d0
 product/lib/libmp-dis-v4.so|0ec08e2f4de98b62628f85a2fa2c95a36cdeda60
 product/lib/libmp-dis-v5.so|4f34d10d7166f59ed42c8af88e8dbb0617e1efa3
 product/lib/libmp-superres.so|41fe026494943e450787b32d051645c4a138e08b
+product/lib/libmpbase.so|e9dc5e7efeb124ff3d07bf8e4a59f37972d1a6d0
 product/lib/libnnp.so|346bb505f29b3947a8e05b33abdcff680a42c90b
-product/lib/libPlatformValidatorShared.so|157f49c44405b547c32ea5331fb79a9b8ccbbdb4
 product/lib/libqc-clearsight.so|d0ecbdc50a127b5483d9938a897db33202b303e8
 product/lib/libqc-depth.so|5bd5f7e54fad6ca331845397bdcc58101e137f85
 product/lib/libqc-focus.so|f4b1aa4c1159ab614f981abaf59a64c980ae38bb
@@ -240,8 +242,6 @@ product/lib/libsnpe_dsp_domains.so|fa33f8781fd0d9aabb7a6bc59d007620697665ff
 product/lib/libsnpe_dsp_domains_system.so|8cfb556162bbb53e41aee1dc55f06d13711f5305
 product/lib/libsnpe_dsp_domains_v2.so|e0e06ab3fcbd8abb170c743cd4bb9de865386926
 product/lib/libsnpe_dsp_domains_v2_system.so|ad1c72d4e3f0a6d58e7bbb7a1eceb7675fa8a05e
-product/lib/libSNPE_G.so|78d817d01403fda1885d11959e4384596b655eab
-product/lib/libSNPE.so|24c0f2cc648b469a3e7a78459866ccb422747a07
 product/lib/libsymphony-cpu.so|4871b8eddff1efd897c1da68a96698beab532045
 product/lib/libubifocus.so|6aa23369cf142d7387b8f2b50c3b01f5de5ace80
 product/lib/libyuv.so|e8d39ad4161bd242bbec3d35b650b6f63b2f49aa
