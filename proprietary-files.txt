@@ -265,6 +265,10 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib/com.fingerprints.extension@1.0.so
 
+# Sensors - from chef - QPTS30.61-18-16-16
+vendor/lib/sensors.ssc.so|58f8098546199c6c43a38f09f42da6ec254a5c58
+vendor/lib64/sensors.ssc.so|b3386328c3058869e5badcfc4bf5aa4af3adeed9
+
 # Vibrator Firmwares
 vendor/firmware/aw8624_haptic.bin
 vendor/firmware/aw8624_rtp.bin
