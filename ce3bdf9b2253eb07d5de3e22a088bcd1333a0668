@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3d4c8585_2e784390",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 268,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-01-04T21:18:02Z",
+      "side": 1,
+      "message": "just squash with the above",
+      "range": {
+        "startLine": 268,
+        "startChar": 0,
+        "endLine": 268,
+        "endChar": 9
+      },
+      "revId": "ce3bdf9b2253eb07d5de3e22a088bcd1333a0668",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
