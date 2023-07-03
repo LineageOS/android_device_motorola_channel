@@ -38,6 +38,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 TARGET_KERNEL_CONFIG := channel_defconfig
 BOARD_RAMDISK_USE_XZ := true
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/battery_charging_enabled
+
 # Low Memory Devices
 MALLOC_SVELTE := true
 
