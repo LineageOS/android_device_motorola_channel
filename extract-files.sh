@@ -9,9 +9,15 @@
 function blob_fixup() {
     case "${1}" in
         # libutils-v32
-        vendor/lib/soundfx/libspeakerbundle.so | vendor/lib/sensors.ssc.so | vendor/lib64/sensors.ssc.so)
+        vendor/lib/sensors.ssc.so | vendor/lib64/sensors.ssc.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
+            ;;
+        # libspeakerbundle
+        vendor/lib/soundfx/libspeakerbundle.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
+            "${PATCHELF}" --replace-needed libtinyalsa.so libtinyalsa-moto.so "${2}"
             ;;
         # Fix missing symbols
         vendor/lib/libmot_gpu_mapper.so)
@@ -31,6 +37,22 @@ function blob_fixup() {
             for  LIBMEMSET_SHIM in $(grep -L "libmemset_shim.so" "${2}"); do
                 "${PATCHELF}" --add-needed "libmemset_shim.so" "$LIBMEMSET_SHIM"
             done
+            ;;
+        # rename moto modified tinyalsa
+        vendor/lib/libtinyalsa-moto.so | vendor/lib64/libtinyalsa-moto.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --set-soname libtinyalsa-moto.so "${2}"
+            ;;
+        # rename moto modified tinyalsa
+        vendor/lib/soundfx/libmmieffectswrapper.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed libtinyalsa.so libtinyalsa-moto.so "${2}"
+            ;;
+        # rename moto modified primary audio to not conflict with source built
+        vendor/lib/hw/audio.primary.msm8953-moto.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --set-soname audio.primary.msm8953-moto.so "${2}"
+            "${PATCHELF}" --replace-needed libtinyalsa.so libtinyalsa-moto.so "${2}"
             ;;
         *)
             return 1
