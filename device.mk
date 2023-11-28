@@ -21,7 +21,6 @@ $(call inherit-product, vendor/motorola/channel/channel-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
-PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     AvoidAppsInCutoutOverlay \
