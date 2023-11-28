@@ -1,5 +1,5 @@
 
-Device configuration for Motorola g7 play(channel)
+Device configuration for Motorola g7 play (channel)
 ==================================
 
 Basic   | Spec Sheet
