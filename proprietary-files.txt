@@ -188,9 +188,6 @@ vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_vstab_module.so
 
-# Camera - MotCamera2
--product/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk
-
 # Camera - MotCamera2 (JNI)
 product/lib/libBulkSNPE.so|1f62c5a2a85f0a3c4ec8c5ac073ba9f25ecb8799
 product/lib/libFNVfbEngineHAL.so|04f50ed9d90cd784af4f7cd99ac1801b61b6f7c4
