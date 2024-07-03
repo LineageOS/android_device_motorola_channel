@@ -9,7 +9,7 @@ vendor/lib/libmotaudioutils.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/soundfx/libmmieffectswrapper.so
-vendor/lib/soundfx/libspeakerbundle.so
+vendor/lib/soundfx/libspeakerbundle.so|af862a0f01a2c2134dffeb47dd6b6dbd6d2efd39
 vendor/lib/vndk/libtinyalsa.so:vendor/lib/libtinyalsa.so
 
 # Audio - ACDB
@@ -101,7 +101,7 @@ vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera - GPU
-vendor/lib/libmot_gpu_mapper.so
+vendor/lib/libmot_gpu_mapper.so|7c3e8f915ae55f4d0a945e3bfc26b634158bc176
 
 # Camera - mmcamera
 vendor/lib/libmmcamera2_c2d_module.so
@@ -114,7 +114,7 @@ vendor/lib/libmmcamera2_isp_modules.so
 vendor/lib/libmmcamera2_mct.so
 vendor/lib/libmmcamera2_mct_shimlayer.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
-vendor/lib/libmmcamera2_pproc_modules.so
+vendor/lib/libmmcamera2_pproc_modules.so|23694d693bcdfaa36e40aef70e35a016916d2832
 vendor/lib/libmmcamera2_q3a_core.so
 vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
@@ -246,7 +246,7 @@ product/lib/libyuv.so|e8d39ad4161bd242bbec3d35b650b6f63b2f49aa
 product/lib/libzxing-core.so|dedf0417a2879f11347fa24063fef4f128974887
 
 # Offmode charging
-vendor/bin/charge_only_mode
+vendor/bin/charge_only_mode|d1a7019e948e977ee62c982e3b1f16f2c5263a46
 
 # Display Calibrations
 vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_hd_568.xml|52c188b6ca0e407c68219f2e6ed9edfbb2c3e204
@@ -264,8 +264,8 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib/com.fingerprints.extension@1.0.so
 
 # Sensors - from chef_sprout (QPTS30.61-18-16-16)
-vendor/lib/sensors.ssc.so|58f8098546199c6c43a38f09f42da6ec254a5c58
-vendor/lib64/sensors.ssc.so|b3386328c3058869e5badcfc4bf5aa4af3adeed9
+vendor/lib/sensors.ssc.so|f9afdc645f2b34cb25c8ee7bf165745a80e07a21
+vendor/lib64/sensors.ssc.so|2b8a1428dae979aa84eb52efa82861eb5af7add6
 
 # Vibrator firmware
 vendor/firmware/aw8624_haptic.bin
