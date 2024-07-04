@@ -264,7 +264,7 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib/com.fingerprints.extension@1.0.so
 
 # MotCamera2
-product/priv-app/MotCamera2/MotCamera2.apk;PRESIGNED
+product/priv-app/MotCamera2/MotCamera2.apk
 
 # Sensors - from chef_sprout (QPTS30.61-18-16-16)
 vendor/lib/sensors.ssc.so|f9afdc645f2b34cb25c8ee7bf165745a80e07a21
