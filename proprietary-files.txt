@@ -1,13 +1,25 @@
 ## All blobs from this list, unless pinned and noted as otherwise,
 ## are from channel_retail (QPYS30.85-23-8-2).
 
+# Current blobs with ELF checks disabled:
+# libmot_gpu_mapper depends on libc2dcolorconvert, which is a gnu makefile target
+# gralloc1 depends on libgrallocutils, which is a gnu makefile target
+# 32bit libmmcamera_faceproc is unable to resolved the following symbols:
+# __aeabi_memcpy@LIBC_PRIVATE, __aeabi_memset@LIBC_PRIVATE, __gnu_Unwind_Find_exidx@LIBC_PRIVATE
+# 32bit libmmcamera2_is, libmmcamera2_cpp_module, libmmcamera2_q3a_core, libmmcamera_vstab_module, libmmcamera_pdaf, libmmcamera_pdafcamif, libmmcamera2_sensor_modules, audio.primary.msm8953-moto, camera.msm8953,  are unable to resolved the following symbols:
+# __aeabi_ldivmod, __aeabi_uldivmod 
+# 32bit libmmcamera2_mct, libmmcamera_interface, libmmcamera2_stats_modules, libsensorndkbridge are unable to resolved the following symbol:
+# __aeabi_ldivmod
+# 32bit libmmcamera2_stats_algorithm, libmmcamera2_stats_lib, libmmcamera2_isp_modules, libmmcamera2_iface_modules, libmmcamera2_imglib_modules, libmmcamera_hdr_gb_lib, libadm, libtinycompress_vendor, sensors.ssc are unable to resolved the following symbol:
+# __aeabi_uldivmod
+
 # Audio (Prebuilt Audio HAL)
-vendor/lib/hw/audio.primary.msm8953.so:vendor/lib/hw/audio.primary.msm8953-moto.so;FIX_SONAME
-vendor/lib/libadm.so
+vendor/lib/hw/audio.primary.msm8953.so:vendor/lib/hw/audio.primary.msm8953-moto.so;FIX_SONAME;DISABLE_CHECKELF
+vendor/lib/libadm.so;DISABLE_CHECKELF
 vendor/lib/liblog_vendor.so
 vendor/lib/libmotaudioutils.so
-vendor/lib/libsensorndkbridge.so
-vendor/lib/libtinycompress_vendor.so
+vendor/lib/libsensorndkbridge.so;DISABLE_CHECKELF
+vendor/lib/libtinycompress_vendor.so;DISABLE_CHECKELF
 vendor/lib/soundfx/libmmieffectswrapper.so
 vendor/lib/soundfx/libspeakerbundle.so
 vendor/lib/vndk/libtinyalsa.so:vendor/lib/libtinyalsa-moto.so;FIX_SONAME
@@ -27,7 +39,7 @@ vendor/lib/rfsa/adsp/tas2560_TI_0.bin
 vendor/lib/rfsa/adsp/tas2560_TI_1.bin
 
 # Camera
-vendor/lib/hw/camera.msm8953.so
+vendor/lib/hw/camera.msm8953.so;DISABLE_CHECKELF
 vendor/lib/lib_motsensorlistener.so
 vendor/lib/libactuator_dw9763.so
 vendor/lib/libactuator_dw9767.so
@@ -102,37 +114,37 @@ vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera - GPU
-vendor/lib/libmot_gpu_mapper.so
+vendor/lib/libmot_gpu_mapper.so;DISABLE_CHECKELF
 
 # Camera - mmcamera
 vendor/lib/libmmcamera2_c2d_module.so
-vendor/lib/libmmcamera2_cpp_module.so
+vendor/lib/libmmcamera2_cpp_module.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_frame_algorithm.so
-vendor/lib/libmmcamera2_iface_modules.so
-vendor/lib/libmmcamera2_imglib_modules.so
-vendor/lib/libmmcamera2_is.so
-vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_mct.so
+vendor/lib/libmmcamera2_iface_modules.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_imglib_modules.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_is.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_isp_modules.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_mct.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_mct_shimlayer.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
-vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_modules.so
-vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_lib.so
-vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera2_q3a_core.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_sensor_modules.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_stats_algorithm.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_stats_lib.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_stats_modules.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_depth_map.so
 vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
-vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmmcamera_hdr_gb_lib.so
+vendor/lib/libmmcamera_hdr_gb_lib.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
-vendor/lib/libmmcamera_interface.so
+vendor/lib/libmmcamera_interface.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_isp_abf40.so
 vendor/lib/libmmcamera_isp_bcc40.so
 vendor/lib/libmmcamera_isp_be_stats44.so
@@ -172,8 +184,8 @@ vendor/lib/libmmcamera_mot_dw9767_eeprom.so
 vendor/lib/libmmcamera_mot_gt24p64b_eeprom.so
 vendor/lib/libmmcamera_mot_s5k3l6.so
 vendor/lib/libmmcamera_paaf_lib.so
-vendor/lib/libmmcamera_pdaf.so
-vendor/lib/libmmcamera_pdafcamif.so
+vendor/lib/libmmcamera_pdaf.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera_pdafcamif.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_quadracfa.so
@@ -187,7 +199,7 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
-vendor/lib/libmmcamera_vstab_module.so
+vendor/lib/libmmcamera_vstab_module.so;DISABLE_CHECKELF
 
 # Camera - MotCamera2 (JNI)
 product/lib/libBulkSNPE.so|1f62c5a2a85f0a3c4ec8c5ac073ba9f25ecb8799
@@ -268,8 +280,8 @@ vendor/lib/com.fingerprints.extension@1.0.so
 product/priv-app/MotCamera2/MotCamera2.apk|83ea3cb2562535776bd42cb8272ef9ae72593ab8
 
 # Sensors - from chef_sprout (QPTS30.61-18-16-16)
-vendor/lib/sensors.ssc.so|58f8098546199c6c43a38f09f42da6ec254a5c58
-vendor/lib64/sensors.ssc.so|b3386328c3058869e5badcfc4bf5aa4af3adeed9
+vendor/lib/sensors.ssc.so;DISABLE_CHECKELF|58f8098546199c6c43a38f09f42da6ec254a5c58
+vendor/lib64/sensors.ssc.so;DISABLE_CHECKELF|b3386328c3058869e5badcfc4bf5aa4af3adeed9
 
 # Vibrator firmware
 vendor/firmware/aw8624_haptic.bin
