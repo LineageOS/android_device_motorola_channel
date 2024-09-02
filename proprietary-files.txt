@@ -2,7 +2,7 @@
 ## are from channel_retail (QPYS30.85-23-8-2).
 
 # Audio (Prebuilt Audio HAL)
-vendor/lib/hw/audio.primary.msm8953.so:vendor/lib/hw/audio.primary.msm8953-moto.so
+vendor/lib/hw/audio.primary.msm8953.so:vendor/lib/hw/audio.primary.msm8953-moto.so;FIX_SONAME
 vendor/lib/libadm.so
 vendor/lib/liblog_vendor.so
 vendor/lib/libmotaudioutils.so
@@ -10,7 +10,7 @@ vendor/lib/libsensorndkbridge.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/soundfx/libmmieffectswrapper.so
 vendor/lib/soundfx/libspeakerbundle.so
-vendor/lib/vndk/libtinyalsa.so:vendor/lib/libtinyalsa-moto.so
+vendor/lib/vndk/libtinyalsa.so:vendor/lib/libtinyalsa-moto.so;FIX_SONAME
 
 # Audio - ACDB
 vendor/etc/acdbdata/common/Bluetooth_cal.acdb
