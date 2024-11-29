@@ -9,9 +9,28 @@
 function blob_fixup() {
     case "${1}" in
         # libutils-v32
-        vendor/lib/sensors.ssc.so | vendor/lib64/sensors.ssc.so)
+        vendor/lib/soundfx/libspeakerbundle.so | vendor/lib/sensors.ssc.so | vendor/lib64/sensors.ssc.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
+            ;;
+        # Fix missing symbols
+        vendor/lib/libmot_gpu_mapper.so)
+            [ "$2" = "" ] && return 0
+            for LIBGUI_SHIM in $(grep -L "libgui_shim_vendor.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libgui_shim_vendor.so" "${LIBGUI_SHIM}"
+            done
+            ;;
+        # Fix camera recording
+        vendor/lib/libmmcamera2_pproc_modules.so)
+            [ "$2" = "" ] && return 0
+            sed -i "s/ro.product.manufacturer/ro.product.nopefacturer/" "${2}"
+            ;;
+        # memset shim
+        vendor/bin/charge_only_mode)
+            [ "$2" = "" ] && return 0
+            for  LIBMEMSET_SHIM in $(grep -L "libmemset_shim.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libmemset_shim.so" "$LIBMEMSET_SHIM"
+            done
             ;;
         *)
             return 1
