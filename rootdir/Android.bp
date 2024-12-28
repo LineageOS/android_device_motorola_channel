@@ -13,8 +13,8 @@ sh_binary {
 
 // Init configuration files
 prebuilt_etc {
-    name: "init.ocean.rc",
-    src: "etc/init.ocean.rc",
+    name: "init.channel.rc",
+    src: "etc/init.channel.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
