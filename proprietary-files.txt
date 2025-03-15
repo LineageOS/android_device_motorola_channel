@@ -275,9 +275,9 @@ vendor/lib/com.fingerprints.extension@1.0.so
 # MotCamera2
 product/priv-app/MotCamera2/MotCamera2.apk|83ea3cb2562535776bd42cb8272ef9ae72593ab8
 
-# Sensors - from chef_sprout (QPTS30.61-18-16-16)
-vendor/lib/sensors.ssc.so;DISABLE_CHECKELF|58f8098546199c6c43a38f09f42da6ec254a5c58
-vendor/lib64/sensors.ssc.so;DISABLE_CHECKELF|b3386328c3058869e5badcfc4bf5aa4af3adeed9
+# Sensors - chef_retail-user 10 QPTS30.61-18-16-19 da2f0-da2f0 release-keys
+vendor/lib/sensors.ssc.so;DISABLE_CHECKELF|58f8098546199c6c43a38f09f42da6ec254a5c58|730c6fe5f6112f1f6a5519d9b34ffd825b094a3c
+vendor/lib64/sensors.ssc.so;DISABLE_CHECKELF|b3386328c3058869e5badcfc4bf5aa4af3adeed9|b96ebfed68d59b85523258f4212822d80ed5787a
 
 # Vibrator firmware
 vendor/firmware/aw8624_haptic.bin
