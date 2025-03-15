@@ -269,8 +269,7 @@ vendor/firmware/novatek_ts-djn-NT36525B-190103-146-channel.bin
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/lib/com.fingerprints.extension@1.0.so
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-channel.rc
 
 # MotCamera2
 product/priv-app/MotCamera2/MotCamera2.apk|83ea3cb2562535776bd42cb8272ef9ae72593ab8
