@@ -12,7 +12,6 @@
 # Audio (Prebuilt Audio HAL)
 vendor/lib/hw/audio.primary.msm8953.so:vendor/lib/hw/audio.primary.msm8953-moto.so;FIX_SONAME;DISABLE_CHECKELF
 vendor/lib/libadm.so;DISABLE_CHECKELF
-vendor/lib/liblog_vendor.so
 vendor/lib/libmotaudioutils.so
 vendor/lib/libsensorndkbridge.so;DISABLE_CHECKELF
 vendor/lib/libtinycompress_vendor.so;DISABLE_CHECKELF
