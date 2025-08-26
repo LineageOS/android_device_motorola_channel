@@ -64,10 +64,6 @@ $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class
 PRODUCT_PACKAGES += \
     init.channel.rc
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sysfs
-
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0.vendor:64

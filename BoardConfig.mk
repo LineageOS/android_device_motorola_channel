@@ -26,9 +26,6 @@ TARGET_OTA_ASSERT_DEVICE := channel
 # Display
 TARGET_SCREEN_DENSITY := 320
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Kernel
 TARGET_KERNEL_CONFIG := channel_defconfig
 BOARD_RAMDISK_USE_XZ := true
